@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Change Page</title>
+        <style>
+              body{
+            font-family: Arial, sans-serif;
+            background: rgb(174,238,177);
+background: radial-gradient(circle, rgba(174,238,177,1) 0%, rgba(148,233,203,1) 100%);; 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;           
+      }
+      .button {     
+      padding: 10px 10px;
+      background-color:#27cd32;
+      color: #000000;
+      border: none;
+      width: 350px;
+      height: 40px;
+      border-radius: 10px;
+      margin: 5px; 
+  }
+   .box1 {
+     position: absolute;
+     border: 1px solid rgb(0, 0, 0);
+     backdrop-filter: blur(10px);
+     background: transparent;
+     top:200px;
+     left: 500px;
+     height: 150px;
+     width: 360px;
+     border-radius: 15px;
+}
+.button:hover {
+       background-color: #ffffff;  
+}
+.redpg{
+position: relative;
+top:300px;
+width: 1300px;
+right: 10px;
+}
+.img{
+position: absolute;
+height: 500px;
+width: 500px;
+left: -100px;
+bottom: -10px;
+}
+.img2{
+position: absolute;
+height: 340px;
+width: 340px;
+right: -100px;
+bottom: -10px;
+}
+.h1{
+margin-left: 60px;
+}
+.p2{
+    position: absolute;
+    text-align: justify;
+    left: 390px;
+    top: 140px;
+}
+    </style>
+    </head>
+    <body>
+        <p class="p2"><b>Note:</b>If you have to update the previous dataset frist you must remove the previous dataset.</p>
+        <div class="box1">
+        <h1 class="h1">change data set</h1>
+        <form action="/up" method="post">
+      <input type="submit" value="GO" class="button">
+        </form>
+    </div>
+    <div class="redpg">
+        <img src="/static/img7.png" alt="img" class="img">
+      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 320"><path fill="#12a370" fill-opacity="1" d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,197.3C672,192,768,224,864,218.7C960,213,1056,171,1152,149.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg></div>
+      <img src="/static/img12.png" alt="img" class="img2">
+    </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='myfont/css/all.min.css')}}">
+    <script src="{{url_for('static',filename='js/jquery.min.js')}}">
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(174,238,177);
+background: radial-gradient(circle, rgba(174,238,177,1) 0%, rgba(148,233,203,1) 100%);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+
+
+        }
+
+        
+
+       
+
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #24243e;
+            background-color: #27cd32;
+            padding: 7px 5px;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+       
+
+        .button1 {
+           
+            padding: 10px 10px;
+            background-color:#27cd32;
+            color: #000000;
+            border: none;
+            width: 489px;
+            border-radius: 10px;
+            margin: 5px;
+            
+            
+            
+        }
+        .button {
+           
+            padding: 10px 10px;
+            background-color:#27cd32;
+            color: #000000;
+            border: none;
+            width: 250px;
+            height: 40px;
+            border-radius: 10px;
+            margin: 5px;
+            
+            
+           
+        }
+
+        .button:hover {
+            background-color: #ffffff;
+        }
+        .button1:hover {
+            background-color: #ffffff;
+        }
+        .b1{
+            position: absolute;
+        }
+        .b2{
+            position: absolute;
+           margin-top: 50px;
+
+        }
+        .b3{
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 260px;
+          
+           
+
+        }
+       
+
+        .label {
+            color: black;
+            font-size: 1.5em;
+            font-weight: bold;
+            
+           
+          
+        }
+        .l1{
+            position: absolute;
+            margin-top: 120px;
+            margin-left: 10px;
+
+        }
+
+       
+        
+        
+
+.redpg{
+  position: relative;
+  top:300px;
+  width: 1300px;
+  right: 10px;
+  
+  
+  
+
+}
+.img{
+  position: absolute;
+  height: 430px;
+  width: 430px;
+  right: -20px;
+  top: -140px;
+}
+.img2{
+  position: absolute;
+  height: 185px;
+  width: 185px;
+  left: 370px;
+  top: 2px;
+}
+.img3{
+  position: absolute;
+  height: 655px;
+  width: 655px;
+  left: -200px;
+  bottom: -60px;
+}
+.con{
+    position: absolute;
+    height: 200px;
+    width: 700px;
+    top: 170px;
+    left: 390px;
+    
+}
+
+    </style>
+</head>
+<body>
+    
+
+        
+
+  
+    <nav class="top-right">
+        <a href="/about">About</a>
+        <a href="/admin">Admin</a>
+    </nav>
+    
+    <img src="/static/img11.png" alt="img" class="img2">
+    
+ <div class="con">
+  
+    <form method="POST" enctype="multipart/form-data" action="/customer">
+        <div class="b1">
+
+            <input id="button1" type="file" name="file" accept=".jpg, .jpeg, .png" class="button1">
+        </div>   
+        <div class="b2">
+            <input id="button2" type="submit" value="Predict" class="button">
+        </div>
+    </form>
+    <div class="l1">
+    <div class="label">
+        Disease name: {{data}}
+    </div>
+</div>
+    <div class="b3">
+    <form method="POST" action="/tips">
+        <input id="button2" type="submit" value="Tips" class="button">
+    </form>
+</div>
+</div>
+
+
+
+    <div class="redpg">
+      
+        <img src="/static/img13.png" alt="img" class="img">
+      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 320"><path fill="#12a370" fill-opacity="1" d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,197.3C672,192,768,224,864,218.7C960,213,1056,171,1152,149.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
+    <img src="/static/img4.png" alt="img" class="img3">
+
+
+
+</body>
+</html>
+
+
+
+
+

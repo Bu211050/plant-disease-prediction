@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Main Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      body{
+            font-family: Arial, sans-serif;
+            background: rgb(174,238,177);
+background: radial-gradient(circle, rgba(174,238,177,1) 0%, rgba(148,233,203,1) 100%);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+  margin: 0;
+  padding: 0;
+      }
+        .button{
+            position: absolute;
+            top: 50px;
+            left:250px;
+            width: 200px;
+            height: 50px;
+            background-color:#27cd32;
+            border-radius: 20px;
+        }
+        .box1 {
+          position: absolute;
+          border: 1px solid gray;
+          top:30%;
+          right: 380px;
+          height: 200px;
+          width: 500px;
+          border-radius: 15px;
+          box-shadow: 5px 10px 18px #12a370;
+}
+.button:hover {
+            background-color: #ffffff;            
+}
+.redpg{
+  position: relative;
+  top:300px;
+}
+.img{
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  right: -50px;
+  bottom: -40px;
+}
+.img2{
+  position: relative;
+  height: 270px;
+  width: 270px;
+  bottom: 30px;
+  left: 1px; 
+}
+.img3{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+ top: 10px;
+  left: 1px;
+}
+.img4{
+  position: absolute;
+  height: 450px;
+  width: 450px;
+ bottom: -10px;
+  left: -90px; 
+}
+.h1{
+  position: absolute;
+  top: 10px;
+  left: 18%;
+  font-family: 'fantasy';
+  font-size:60px ;
+  color: hsl(122, 69%, 20%);
+}
+.h2{
+  position: absolute;
+  top: 85px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  right: 90px;
+  font-size: 40px;
+}
+ </style>
+  </head>
+  <body>
+    <div class="redpg"> 
+    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 320"><path fill="#12a370" fill-opacity="1" d="M0,288L48,288C96,288,192,288,288,266.7C384,245,480,203,576,197.3C672,192,768,224,864,218.7C960,213,1056,171,1152,149.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg></div>
+    <h1 class="h1"><b>Agriculture Disease Prediction System </b></h1>
+    <h1 class="h2">Enhanced by AI</h1>
+      <div class="box1">
+        <img src="/static/img1.png" alt="img" class="img2">
+        <form action="/go" method="POST">
+            <input type="submit" value="Get start" class="button">
+        </form>
+      </div>
+      <img src="/static/img2.gif" alt="img" class="img3">
+      <img src="/static/img1.gif" alt="img" class="img4">
+      <img src="/static/former.png" alt="img" class="img">
+  </body>
+</html>
